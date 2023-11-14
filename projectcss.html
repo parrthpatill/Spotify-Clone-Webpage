@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="projectcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav_option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav_option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options nav_option">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                </div>
+                <div class="lib-boxes">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box" style="height: 9.75rem;">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="sticky-navbar">
+                <div class="stick-navbar-icons">
+                    <img src="./assets/backward_icon.png">
+                    <img src="./assets/forward_icon.png" class="hide">
+                </div>
+                <div class="stick-navbar-buttons">
+                    <button class="badge nav-but hide">Explore Premium</button>
+                    <button class="badge nav-but install"><i class="fa-regular fa-circle-down" style="margin-right: 0.2rem;"></i>Install App</button>
+                    <i class="fa-regular fa-user nav-but"></i>
+                </div>
+            </div>
+           
+                <h2>Recently Played</h2>
+                <div class="card-container">
+                    <div class="cards">
+                        <img src="./assets/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks...</p>
+                    </div>
+                </div>
+    
+                <h2>Trending now near you</h2>
+                <div class="card-container">
+                    <div class="cards">
+                        <img src="./assets/card2img.jpeg" class="card-img">
+                        <p class="card-title">Indie India</p>
+                        <p class="card-info">Best indie music for you</p>
+                    </div>
+                    <div class="cards">
+                        <img src="./assets/card3img.jpeg" class="card-img">
+                        <p class="card-title">Indie India</p>
+                        <p class="card-info">Best indie music for you</p>
+                    </div>
+                    <div class="cards">
+                        <img src="./assets/card4img.jpeg" class="card-img">
+                        <p class="card-title">Indie India</p>
+                        <p class="card-info">Best indie music for you</p>
+                    </div>
+                    <div class="cards">
+                        <img src="./assets/card3img.jpeg" class="card-img">
+                        <p class="card-title">Indie India</p>
+                        <p class="card-info">Best indie music for you</p>
+                    </div>
+                    <div class="cards">
+                        <img src="./assets/card4img.jpeg" class="card-img">
+                        <p class="card-title">Indie India</p>
+                        <p class="card-info">Best indie music for you</p>
+                    </div>
+                </div>
+    
+                <h2>Featured charts</h2>
+                <div class="card-container">
+                    <div class="cards">
+                        <img src="./assets/card5img.jpeg" class="card-img">
+                        <p class="card-title">Top songs global</p>
+                        <p class="card-info">Your daily updates of the most played tracks...</p>
+                    </div>
+                    <div class="cards">
+                        <img src="./assets/card6img.jpeg" class="card-img">
+                        <p class="card-title">Top songs India</p>
+                        <p class="card-info">Your daily updates of the most played tracks...</p>
+                    </div>
+                    <div class="cards">
+                        <img src="./assets/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks...</p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+            </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="./hw/album_picture.jpeg" class="album-img1" style="height: 56px;">
+                <div class="album-text">
+                    <a href="#" class="alb-title">Daylight</a>
+                    <a href="#" class="alb-txt">David Kushner</a>
+                </div>
+                <img src="./hw/album_icon1.png" class="ablum-img2" style="margin-left: 3rem;">
+                <img src="./hw/album_icon2.png" class="album-img2" style="height: 32px;margin-left: 0.5rem;">
+                    
+            </div>
+            <div class="player">
+                <div class="playbar">
+                    <img src="./assets/player_icon1.png" class="playbar-icon">
+                    <img src="./assets/player_icon2.png" class="playbar-icon">
+                    <img src="./assets/player_icon3.png" class="playbar-icon" style="height: 2rem;opacity: 1;">
+                    <img src="./assets/player_icon4.png" class="playbar-icon">
+                    <img src="./assets/player_icon5.png" class="playbar-icon">
+                </div>
+                <div class="progressbar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" step="1" class="meter">
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="controls-img">
+                <img src="./hw/controls_icon1.png" height="40px" class="c-img">
+                <img src="./hw/controld_icon2.png" height="40px" class="c-img">
+                <img src="./hw/controls_icon3.png" height="20px" class="c-img">
+                <img src="./hw/controls_icon4.png" height="18px" class="c-img" style="margin-left: 0.7rem;">
+                <img src="./hw/controls_icon5.png" height="40px" class="c-img">
+                </div>
+                
+                <input type="range" min="0" max="100" class="meter-2">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
